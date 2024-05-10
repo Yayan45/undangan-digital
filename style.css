@@ -21,7 +21,6 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  filter: grayscale();
 }
 
 .hero {
@@ -35,9 +34,28 @@ body {
   text-shadow: var(--shadow);
 }
 
-.hero h1 {
+.judul{
+  margin-bottom: 19rem;
+}
+
+.judul h1 {
   font-family: 'Sacramento', cursive;
-  font-size: 6rem;
+  font-size: 5rem;
+  color: var(--pink);
+}
+.judul h6{
+  font-size: 1.5rem;
+}
+.for {
+  background-color: rgb(255 255 255 / 40%);
+  backdrop-filter: blur(5px);
+  color: #0a0a0a;
+  padding: 1rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 
 .hero h4 {
@@ -49,44 +67,37 @@ body {
 }
 
 .hero a {
-  color: var(--pink);
+  color:var(--pink);
   background-color: white;
   box-shadow: var(--shadow);
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
 }
 
 .hero a:hover {
   background-color: var(--pink);
   color: white;
+  border-radius: 5rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
 }
 
-.mynavbar {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(4px);
-}
-
-.mynavbar .offcanvas {
-  height: 100vh;
-}
-
-.mynavbar .navbar-brand,
-.mynavbar .offcanvas-title {
-  font-family: 'Sacramento', cursive;
-  font-size: 3.2rem;
-  font-weight: bold;
-}
-
-.mynavbar .nav-link {
-  text-transform: uppercase;
-}
 
 .home {
   background-image: url(img/bg.png);
   background-size: cover;
   min-height: 100vh;
-  margin-top: -6rem;
+  margin-top: 6rem;
   padding-top: 15rem;
   padding-bottom: 5rem;
 }
+
+
 
 .home h2,
 .info h2,
@@ -143,8 +154,8 @@ body {
 }
 
 .info {
-background:url(img/bg.png);
-  color: black;
+  background-color: #0a0a0a;
+  color: white;
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -159,24 +170,28 @@ background:url(img/bg.png);
 }
 
 .info .card {
-  background-color: rgba(255, 255, 255, 0.7) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
   border: 1px solid #999;
+
 }
 
 .info .card-header {
   border-bottom: 1px solid #999;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  color: white;
 }
 
 .info .card-body {
   font-size: 1rem;
+  color: white;
 }
 
 .info .card-footer {
-  border-top: 1px solid #999;
+  border-top: 1px solid white;
   font-size: 0.9rem;
   font-weight: 300;
+  color: #999;
 }
 
 .story,
@@ -399,9 +414,7 @@ footer li {
     font-size: 75%;
   }
 
-  .simply-countdown > .simply-section {
-    padding: 70px;
-  }
+
 
   .home .heart {
     display: none;
@@ -435,9 +448,16 @@ footer li {
     left: -13px;
     right: auto;
   }
+  .judul{
+    margin-top: 75px;
+  }
+  .for{
+   margin-top: 319px;
+   font-size: small;
+  }
 }
 .quote{
-  background-color: rgba(145, 43, 188, 0.2);
+  /* background-color: rgba(145, 43, 188, 0.1); */
   color: #0a0a0a;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
@@ -476,6 +496,15 @@ footer li {
   .quote{
     font-size: 18px ;
   }
+  .judul{
+    margin-top: 75px;
+  }
+  .for{
+   margin-top: 319px;
+  }
+  .simply-countdown{
+    margin-top: 10px;
+  }
 }
 
 /* mobile phone */
@@ -508,6 +537,15 @@ footer li {
   }
   .quote{
     font-size: 15px ;
+  }
+  .judul{
+    margin-top: 75px;
+  }
+  .for{
+   margin-top: 319px;
+  }
+  .simply-countdown{
+    margin-top: 10px;
   }
 }
 
