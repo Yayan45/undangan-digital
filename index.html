@@ -281,33 +281,36 @@
         </div>
       </div>
 
-      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
-        action="https://script.google.com/macros/s/AKfycbyddFbEJRqwEeA6OmZAuNf0jw_B30ZUOS5qSDwlAKV_nurcW7H6osJx2ZWnIeTmPm_35g/exec"
-        id="my-form">
+      <form onsubmit="sendMessage()">
         <div class="col-12">
           <div class="mb-3">
             <label for="nama" class="form-label">Nama</label>
             <input type="text" class="form-control" id="nama" name="nama">
           </div>
-        </div>
-        <div class="col-12">
+
           <div class="mb-3">
-            <label for="jumlah" class="form-label">Jumlah</label>
-            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+            <label for="jumlah" class="form-label">Alamat</label>
+            <input type="text" class="form-control" id="alamat" name="alamat">
           </div>
-        </div>
-        <div class="col-12">
+
+
           <div class="mb-3">
-            <label for="status" class="form-label">Konfirmasi</label>
-            <select name="status" id="status" class="form-select">
+            <label for="konfirmasi" class="form-label">Konfirmasi kehadiran</label>
+            <select name="konfirmasi" id="konfirmasi" class="form-select">
               <option selected>Pilih salah satu</option>
               <option value="Hadir">Hadir</option>
               <option value="Tidak Hadir">Tidak Hadir</option>
             </select>
           </div>
+
+
+          <div class="mb-3">
+            <label for="pesan">Pesan</label>
+            <textarea name="pesan" id="pesan" class="form-control"></textarea>
+          </div>
         </div>
         <div class="col-12" style="margin-top: 35px;">
-          <button class="btn btn-primary">Kirim</button>
+          <button type="submit" class="btn btn-primary  py-2 px-5">Kirim</button>
         </div>
       </form>
 
@@ -512,6 +515,19 @@
 
     document.querySelector('#nama').value = nama;
   </script>
+
+<script>
+
+  function sendMessage(){
+      const nama = document.getElementById('nama').value;
+      const alamat = document.getElementById('alamat').value;
+      const konfirmasi = document.getElementById('konfirmasi').value;
+      const pesan = document.getElementById('pesan').value;
+
+      const url = "https://api.whatsapp.com/send?phone=6283123951548&text=_konfirmasi%20kehadiran_%0A%0ANama%20%20%20%20%20%20%20%20%3A%20*"+nama+"*%0AAlamat%20%20%20%20%20%20%3A%20*"+alamat+"*%0Akehadiran%20%3A%20%20*"+konfirmasi+"*%0APesan%20%20%20%20%20%20%20%20%3A%20*"+ pesan +"*%20";
+      window.open(url);
+  }
+</script>
 </body>
 
 </html>
