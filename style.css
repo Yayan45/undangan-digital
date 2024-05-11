@@ -47,9 +47,10 @@ body {
   font-size: 1.5rem;
 }
 .for {
-  background-color: rgb(255 255 255 / 40%);
+  background-color: rgb(255 255 255 / 10%);
   backdrop-filter: blur(5px);
-  color: #0a0a0a;
+  color: white;
+  text-shadow: #912BBC 1px 1px 10px;
   padding: 1rem;
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
@@ -476,7 +477,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 60px;
+    padding: 40px;
     margin: 5px;
   }
 
@@ -500,7 +501,7 @@ footer li {
     margin-top: 75px;
   }
   .for{
-   margin-top: 319px;
+   margin-top: 300px;
   }
   .simply-countdown{
     margin-top: 10px;
@@ -514,7 +515,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 45px;
+    padding: 30px;
     margin: 3px;
   }
 
@@ -542,11 +543,11 @@ footer li {
     margin-top: 75px;
   }
   .for{
-   margin-top: 319px;
+   margin-top: 300px;
   }
   .simply-countdown{
     margin-top: 10px;
-  }
+  } 
 }
 
 
