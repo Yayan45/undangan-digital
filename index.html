@@ -22,7 +22,17 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <!-- Animate  Css -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Animate aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- My Css -->
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -31,13 +41,13 @@
     class="hero w-100 h-100 p-3 text-center d-flex justify-content-center align-items-center text-white">
     <main>
       <div class="judul">
-        <h6>The Wedding Of</h6>
-        <h1>Putra aditya & Putri amelia</h1>
+        <h6 class="animate__animated animate__bounceInDown">The Wedding Of</h6>
+        <h1 class="animate__animated animate__bounceInUp">Putra aditya & Putri amelia</h1>
       </div>
       <div class="for">
           <h5>Kepada Yth: <br></h5>
         <h4>Bapak/Ibu/Saudara/i,</h4>
-         <B><span></span></B> 
+         <B><span></span></B>
         <h5>Di Tempat</h5>
       </div>
       <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
@@ -57,7 +67,7 @@
 
       <div class="row couple">
         <div class="col-lg-6">
-          <div class="row">
+          <div class="row" data-aos="fade-right" data-aos-duration="2000">
             <div class="col-8 text-end">
               <h3>Putra Aditya</h3>
               <p>"Cinta kita seperti sebuah lukisan yang indah, diwarnai dengan sentuhan-sentuhan kecil kasih sayang dan pengertian. Aku tidak pernah berhenti bersyukur karena memilikimu."</p>
@@ -72,7 +82,7 @@
         <span class="heart"><i class="bi bi-heart-fill"></i></span>
 
         <div class="col-lg-6">
-          <div class="row">
+          <div class="row" data-aos="fade-left" data-aos-duration="2000">
             <div class="col-4">
               <img src="img/putri.jpeg" alt="Putri Amelia" class="img-responsive rounded-circle">
             </div>
@@ -88,8 +98,8 @@
   </section>
 
 
-  <section id="info" class="info">
-    <div class="container">
+  <section id="info" class="info" >
+    <div class="container" data-aos="fade-up" data-aos-duration="1400">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
           <h2>Informasi Acara</h2>
@@ -106,7 +116,7 @@
       </div>
 
       <div class="row justify-content-center mt-4">
-        <div class="col-md-5 col-10">
+        <div class="col-md-5 col-10" data-aos="fade-right" data-aos-duration="1000">
           <div class="card text-center text-bg-light mb-5">
             <div class="card-header">Akad Nikah</div>
             <div class="card-body">
@@ -126,7 +136,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 col-10">
+        <div class="col-md-5 col-10" data-aos="fade-left" data-aos-duration="1000">
           <div class="card text-center text-bg-light">
             <div class="card-header">Resepsi</div>
             <div class="card-body">
@@ -147,10 +157,41 @@
           </div>
         </div>
       </div>
+      <div class="text-center mt-2 text-bold text-date">Menuju Acara</div>
       <div class="simply-countdown"></div>
     </div>
   </section>
 
+  <section>
+            <!-- Firman Allah Subhanahu Wa Ta'ala -->
+            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
+              <path fill="#0a0a0a" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+          </svg>
+          
+          
+                  <div class="container">
+                    <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
+          
+                        <h1 class="font-aestetik mt-0 mb-3" style="font-size: 2.2rem">
+                            Allah Subhanahu Wa Ta'ala berfirman
+                        </h1>
+          
+                        <p style="font-size: 1.1rem;" class="px-2">
+                            Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari
+                            jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu
+                            rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda
+                            (kebesaran Allah) bagi kaum yang berpikir.
+                        </p>
+          
+                        <p class="m-0 fw-bold">QS. Ar-Rum Ayat 21</p>
+                    </div>
+                </div>
+                <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
+                  <path fill="#0a0a0a" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+              </svg>
+          
+</section>
+  
   <section id="story" class="story">
     <div class="container">
       <div class="row justify-content-center">
@@ -165,7 +206,7 @@
       <div class="row">
         <div class="col">
           <ul class="timeline">
-            <li>
+            <li data-aos="zoom-out-right">
               <div class="timeline-image" style="background-image: url(img/smk.jpeg);"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -179,7 +220,7 @@
               </div>
 
             </li>
-            <li class="timeline-inverted">
+            <li class="timeline-inverted" data-aos="zoom-out-left">
               <div class="timeline-image" style="background-image: url(img/ms.jpeg);"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -194,7 +235,7 @@
               </div>
 
             </li>
-            <li>
+            <li data-aos="zoom-out-right">
               <div class="timeline-image" style="background-image: url(img/tunangan.jpeg);"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -224,36 +265,36 @@
       </div>
 
       <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="fade-up" data-aos-duration="1200">
           <a href="img/gallery/thumbnail/1.jpeg" data-toggle="lightbox" data-caption="Putra & Putri 1" data-gallery="mygallery">
             <img src="img/gallery/1.jpeg" alt="Putra & Putri 1" class="img-fluid w-100 rounded">
           </a>
         </div>
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="fade-up" data-aos-duration="1300">
           <a href="img/gallery/thumbnail/2.jpeg" data-toggle="lightbox" data-caption="Putra & Putri 2"
             data-gallery="mygallery">
             <img src="img/gallery/2.jpeg" alt="Putra & Putri 2" class="img-fluid w-100 rounded">
           </a>
         </div>
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="fade-up" data-aos-duration="1600">
           <a href="img/gallery/thumbnail/3.jpeg" data-toggle="lightbox" data-caption="Putra dan Putri 3"
             data-gallery="mygallery">
             <img src="img/gallery/3.jpeg" alt="Putra dan Putri 3" class="img-fluid w-100 rounded">
           </a>
         </div>
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="fade-up" data-aos-duration="1900">
           <a href="img/gallery/thumbnail/4.jpeg" data-toggle="lightbox" data-caption=" Putra & Putri 4"
             data-gallery="mygallery">
             <img src="img/gallery/4.jpeg" alt="Putra & Putri 4" class="img-fluid w-100 rounded">
           </a>
         </div>
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="fade-up" data-aos-duration="2300">
           <a href="img/gallery/thumbnail/5.jpeg" data-toggle="lightbox" data-caption="Putra & Putri 5"
             data-gallery="mygallery">
             <img src="img/gallery/5.jpeg" alt="Putra & Putri 5" class="img-fluid w-100 rounded">
           </a>
         </div>
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="fade-up" data-aos-duration="2600">
           <a href="img/gallery/thumbnail/6.jpeg" data-toggle="lightbox" data-caption="Putra & Putri 6"
             data-gallery="mygallery">
             <img src="img/gallery/6.jpeg" alt="Putra & Putri 6" class="img-fluid w-100 rounded">
@@ -263,7 +304,7 @@
     </div>
   </section>
 
-  <section class="quote" id="quote" >
+  <!-- <section class="quote" id="quote" >
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
@@ -271,9 +312,11 @@
           <b>-Q.S Ar Rum:21-</b>
         </div>
     </div>
-  </section>
+  </section> -->
+
+
   <section id="rsvp" class="rsvp">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1200">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
           <h2>Konfirmasi Kehadiran</h2>
@@ -305,7 +348,7 @@
 
 
           <div class="mb-3">
-            <label for="pesan">Pesan</label>
+            <label for="pesan">Ucapan Dan Doa</label>
             <textarea name="pesan" id="pesan" class="form-control"></textarea>
           </div>
         </div>
@@ -346,7 +389,7 @@
         <div class="col-md-8 col-10 text-center">
           <span>ungkapan tanda kasih</span>
           <h2>Kirim Hadiah</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iure perferendis provident ab aliquam nemo.
+          <p>Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk kami,dapat melalui : 
           </p>
         </div>
       </div>
@@ -354,17 +397,13 @@
       <div class="row justify-content-center text-center">
         <div class="col-md-6">
           <ul class="list-group">
-            <li class="list-group-item">
+            <li class="list-group-item"  data-aos="fade-up" data-aos-duration="2400">
               <div class="fw-bold"><img src="img/bca.png" width="100px"></div>
-              123456789 - Putri Amelia
+              Rekening : 123456789 - Putri Amelia
             </li>
-            <li class="list-group-item">
-              <div class="fw-bold"><img src="img/bri.png" width="70px"></div>
-              987654321 - Putri Amelia
-            </li>
-            <li class="list-group-item">
-              <div class="fw-bold">Saweria</div>
-              <img src="img/saweria.png" alt="Saweria QR" class="img-thumbnail" width="150">
+            <li class="list-group-item"  data-aos="fade-up" data-aos-duration="2600">
+              <div class="fw-bold"><img src="img/bri.png" width="70px" style="margin-bottom: 5px;"></div>
+              Rekening : 987654321 - Putri Amelia
             </li>
           </ul>
         </div>
@@ -528,6 +567,12 @@
       window.open(url);
   }
 </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>
