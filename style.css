@@ -4,29 +4,18 @@
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
-html{
-  overflow: hidden;
-}
-
 body {
   font-size: 1.2rem;
   font-family: 'Work Sans', sans-serif;
   min-height: 4000px;
-  overflow-x:hidden 
-
-}
-
-.hero::before{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #4e4d48;
+  overflow-x: hidden;
 }
 
 .hero{
-  background-image: url(img/gallery/3.jpeg);
+  background-image: url(img/gallery/foto5.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  background-color: #4e4d48;
 }
 
 .hero {
@@ -40,24 +29,30 @@ body {
   text-shadow: var(--shadow);
 }
 
+.box{
+  margin-top: 20rem;
+}
+
 .judul{
-  margin-bottom: 13rem;
+  margin-bottom: 3rem;
 }
 
 .judul h1 {
   font-family: 'Sacramento', cursive;
-  font-size: 4rem;
+  font-size: 2.8rem;
   color:white;
   text-shadow: black 2px 2px 20px;
+  font-weight:400;
 }
 .judul h6{
   font-size: 1.5rem;
+  font-weight: bold;
 }
 .for {
   background-color: rgb(255 255 255 / 10%);
   backdrop-filter: blur(5px);
   color: white;
-  text-shadow: black 1px 1px 10px;
+  text-shadow: var(--pink) 1.5px 1.5px 10px;
   padding: 1rem;
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
@@ -65,9 +60,13 @@ body {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
 }
+.for h5,
+.for h4{
+  font-weight: bold;
+}
 
 .hero h4 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .hero p {
@@ -103,6 +102,11 @@ body {
   margin-top: 6rem;
   padding-top: 15rem;
   padding-bottom: 5rem;
+}
+.couple li {
+  list-style: none;
+  display: inline;
+  margin: 0.1rem;
 }
 
 .font-aestetik{
@@ -460,14 +464,15 @@ footer li {
     border-right-width: 14px;
     left: -13px;
     right: auto;
-  }
-  .judul{
-    margin-top: 75px;
-    font-size: 10px;
-  }
-  .for{
-   margin-top: 319px;
-   font-size: 10px;
+    .judul{
+      margin-top: -21rem;
+    }
+    .judul h1{
+      font-size: 3.7rem;
+    }
+    .for{
+      margin-top: 38rem;
+    }
   }
 }
 .quote{
@@ -493,23 +498,24 @@ footer li {
     padding: 40px;
     margin: 5px;
   }
-
-
   .timeline li .timeline-image {
     width: 140px;
     height: 140px;
   }
-  .quote{
+  .quote{ 
     font-size: 18px ;
-  }
-  .judul{
-    margin-top: 75px;
-  }
-  .for{
-   margin-top: 300px;
   }
   .simply-countdown{
     margin-top: 10px;
+  }
+  .judul{
+    margin-top: -21rem;
+  }
+  .judul h1{
+    font-size: 3.7rem;
+  }
+  .for{
+    margin-top: 38rem;
   }
 }
 
@@ -521,7 +527,7 @@ footer li {
 
   .hero{
     content: '';
-    background-image: url(img/gallery/3.jpeg);
+    background-image: url(img/gallery/foto5.jpg);
     background-size: cover; 
   }
   .simply-countdown > .simply-section {
@@ -549,15 +555,18 @@ footer li {
   .quote{
     font-size: 15px ;
   }
-  .judul{
-    margin-top: 15px;
-  }
-  .for{
-   margin-top: 420px;
-  }
   .simply-countdown{
     margin-top: 10px;
   } 
+  .judul{
+    margin-top: -21rem;
+  }
+  .judul h1{
+    font-size: 3rem;
+  }
+  .for{
+    margin-top: 44rem;
+  }
 }
 
 
