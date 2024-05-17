@@ -16,13 +16,12 @@ html, body {
   background-image: url(img/gallery/foto5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center
-}
-
-.hero {
+  background-position: center;
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
 }
+
 
 .hero h1,
 .hero h4,
@@ -32,6 +31,7 @@ html, body {
 
 .box{
   margin-top: 20rem;
+  overflow-x: hidden;
 }
 
 .judul{
@@ -103,6 +103,7 @@ html, body {
   margin-top: 6rem;
   padding-top: 15rem;
   padding-bottom: 5rem;
+  overflow-x: hidden;
 }
 .couple li {
   list-style: none;
@@ -173,6 +174,7 @@ html, body {
   color: white;
   padding-top: 10rem;
   padding-bottom: 8rem;
+  overflow-x: hidden;
 }
 
 .info .alamat {
