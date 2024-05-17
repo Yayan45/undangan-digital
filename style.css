@@ -34,7 +34,7 @@ body {
 }
 
 .judul{
-  margin-bottom: 3rem;
+  margin-bottom: 3.3rem;
 }
 
 .judul h1 {
@@ -42,7 +42,7 @@ body {
   font-size: 2.8rem;
   color:white;
   text-shadow: black 2px 2px 20px;
-  font-weight:400;
+  font-weight:700;
 }
 .judul h6{
   font-size: 1.5rem;
@@ -52,7 +52,7 @@ body {
   background-color: rgb(255 255 255 / 10%);
   backdrop-filter: blur(5px);
   color: white;
-  text-shadow: var(--pink) 1.5px 1.5px 10px;
+  text-shadow: black 1.5px 1.5px 10px;
   padding: 1rem;
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
@@ -470,9 +470,9 @@ footer li {
     .judul h1{
       font-size: 3.7rem;
     }
-    .for{
+    /* .for{
       margin-top: 38rem;
-    }
+    } */
   }
 }
 .quote{
@@ -508,15 +508,15 @@ footer li {
   .simply-countdown{
     margin-top: 10px;
   }
-  .judul{
+  /* .judul{
     margin-top: -21rem;
-  }
+  } */
   .judul h1{
     font-size: 3.7rem;
   }
-  .for{
+  /* .for{
     margin-top: 38rem;
-  }
+  } */
 }
 
 /* mobile phone */
@@ -558,15 +558,15 @@ footer li {
   .simply-countdown{
     margin-top: 10px;
   } 
-  .judul{
+  /* .judul{
     margin-top: -21rem;
-  }
+  } */
   .judul h1{
     font-size: 3rem;
   }
-  .for{
+  /* .for{
     margin-top: 44rem;
-  }
+  } */
 }
 
 
