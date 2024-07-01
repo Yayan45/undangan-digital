@@ -18,8 +18,9 @@ html, body {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 100vh;
   overflow-x: hidden;
+  min-height: 100vh;
+  background-position-y: -79px;
 }
 
 
@@ -30,7 +31,7 @@ html, body {
 }
 
 .box{
-  margin-top: 16rem;
+  margin-top: 18rem;
   overflow-x: hidden;
 }
 
@@ -39,8 +40,8 @@ html, body {
 .judul h1 {
   font-family: 'Sacramento', cursive;
   font-size: 55px;
-  color:white;
-  text-shadow: black 2px 2px 20px;
+  color:rgb(255, 255, 255);
+  text-shadow: black 5px 5px 20px;
   font-weight:700;
 }
 .judul h6{
@@ -99,7 +100,6 @@ html, body {
   background-image: url(img/bg1.png);
   background-size: cover;
   min-height: 100vh;
-  margin-top: 6rem;
   padding-top: 15rem;
   padding-bottom: 5rem;
   overflow-x: hidden;
@@ -247,6 +247,12 @@ html, body {
   padding: 1.4rem 0;
   margin-top: 1rem;
   position: relative;
+}
+.font-aestetik b{
+  color: var(--pink);
+}
+.container .surah{
+  color: var(--pink);
 }
 
 .timeline::before {
@@ -529,6 +535,9 @@ footer li {
   html {
     font-size: 60%;
   }
+  .box{
+    margin-top: 38rem;
+  }
 
   .hero{
     content: '';
@@ -572,9 +581,19 @@ footer li {
   .judul h1{
     font-size: 3rem;
   }
-  /* .for{
-    margin-top: 44rem;
-  } */
+  .for{
+    margin-top: -2rem;
+  }
+  .hero{
+    background-image: url(img/gallery/foto5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-position-y: none;
+  }
 }
 
 
