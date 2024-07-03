@@ -38,15 +38,16 @@ html, body {
 
 
 .judul h1 {
-  font-family: 'Sacramento', cursive;
-  font-size: 55px;
+  font-family:  cursive;
+  font-size: 24px !important;
   color:rgb(255, 255, 255);
-  text-shadow: black 5px 5px 20px;
+  text-shadow: black 5px 5px 5px;
   font-weight:700;
 }
 .judul h6{
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: underline;
 }
 .for {
   background-color: rgb(255 255 255 / 10%);
@@ -60,10 +61,16 @@ html, body {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
 }
-.for h5,
+.for h5{
+  font-weight: 600;
+}
 .for h4{
   font-weight: bold;
-  font-size: 19px;
+  font-size: 17px;
+}
+.for b{
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .hero h4 {

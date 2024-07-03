@@ -35,18 +35,20 @@
 </head>
 
 <body>
-    <audio id="song" autoplay>
-      <source src="audio/save-and-sound.mp3" type="audio/mp3">
-    </audio>
+  
+  <audio id="background-music" autoplay loop>
+    <source src="audio/save-and-sound.mp3" type="audio/mp3">
+  </audio>
+
   <section id="hero"
     class="hero w-100 h-100 p-3 text-center d-flex justify-content-center align-items-center text-white">
     <main>
-      <div class="box">
+      <div class="box" style="overflow: hidden !important;">
       <div class="judul">
         <h6 class="animate__animated animate__bounceInDown">The Wedding Of</h6>
         <h1 class="animate__animated animate__bounceInUp">Putra aditya & Putri maharani</h1>
       </div>
-      <div class="for">
+      <div class="for animate__animated animate__fadeInUp">
           <h5>Kepada Yth: <br></h5>
         <h4>Bapak/Ibu/Saudara/i,</h4>
          <B><span></span></B>
@@ -78,8 +80,8 @@
                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                 <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
               </ul>
-              <p>"Cinta kita seperti sebuah lukisan yang indah, diwarnai dengan sentuhan-sentuhan kecil kasih sayang dan pengertian. Aku tidak pernah berhenti bersyukur karena memilikimu."</p>
-              <p>Putra dari Bpk. Lorem <br> dan <br> Ibu Ipsum</p>
+              <!-- <p>"Cinta kita seperti sebuah lukisan yang indah, diwarnai dengan sentuhan-sentuhan kecil kasih sayang dan pengertian. Aku tidak pernah berhenti bersyukur karena memilikimu."</p> -->
+              <p>Putra dari Bpk Syaiful ma'rif,S.kom <br> dan <br> Ibu.sundari</p>
             </div>
             <div class="col-4">
               <img src="img/gallery/cowo.jpg" alt="Putra Aditya" class="img-responsive rounded-circle">
@@ -101,8 +103,8 @@
                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                 <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
               </ul>
-              <p>"Dalam setiap detik yang kita habiskan bersama, aku merasakan betapa beruntungnya aku memilikimu. Kamu adalah jawaban atas semua doa-doa yang pernah kuucapkan."</p>
-              <p>Putra dari Bpk. Ipsum <br> dan <br> Ibu Lorem</p>
+              <!-- <p>"Dalam setiap detik yang kita habiskan bersama, aku merasakan betapa beruntungnya aku memilikimu. Kamu adalah jawaban atas semua doa-doa yang pernah kuucapkan."</p> -->
+              <p>Putra dari Bpk Tri Wahyono <br> dan <br> Ibu Siti aisyah,M.Kom</p>
             </div>
           </div>
         </div>
@@ -585,6 +587,30 @@ function copyText(button) {
     // Menghapus elemen textarea yang tidak terlihat
     document.body.removeChild(textarea);
 }
+</script>
+
+<script>
+  AOS.init();
+
+  // JavaScript to ensure audio keeps playing
+  const audio = document.getElementById('background-music');
+
+  // Add event listener to ensure the audio is always playing
+  audio.addEventListener('ended', () => {
+    audio.currentTime = 0;
+    audio.play();
+  });
+
+  // Ensure autoplay works in modern browsers
+  document.addEventListener('DOMContentLoaded', () => {
+    const playAudio = () => {
+      audio.play().catch(error => {
+        console.log('Autoplay prevented, retrying...');
+        setTimeout(playAudio, 1000);
+      });
+    };
+    playAudio();
+  });
 </script>
 
 </body>
