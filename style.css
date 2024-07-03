@@ -11,7 +11,9 @@ html, body {
   font-family: 'Work Sans', sans-serif;
   min-height: 4000px;
 }
-
+.icon-sosial{
+  color: var(--pink);
+}
 .hero{
   background-image: url(img/gallery/foto5.jpg);
   background-repeat: no-repeat;
@@ -31,7 +33,7 @@ html, body {
 }
 
 .box{
-  margin-top: 18rem;
+  margin-top: 14rem;
   overflow-x: hidden;
 }
 
@@ -39,7 +41,7 @@ html, body {
 
 .judul h1 {
   font-family:  cursive;
-  font-size: 24px !important;
+  font-size: 40px !important;
   color:rgb(255, 255, 255);
   text-shadow: black 5px 5px 5px;
   font-weight:700;
@@ -62,19 +64,20 @@ html, body {
   -o-border-radius: 2rem;
 }
 .for h5{
-  font-weight: 600;
+  font-weight: 350;
 }
 .for h4{
   font-weight: bold;
   font-size: 17px;
 }
 .for b{
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 560;
+  font-size: 22px;
 }
 
 .hero h4 {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
+  font-weight: 350;
 }
 
 .hero p {
@@ -590,6 +593,13 @@ footer li {
   }
   .for{
     margin-top: -2rem;
+  }
+  .for h5{
+    font-weight: 600;
+  }
+  .for b{
+    font-weight: bold;
+    font-size: 20px;
   }
   .hero{
     background-image: url(img/gallery/foto5.jpg);
