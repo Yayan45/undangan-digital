@@ -36,9 +36,9 @@
 
 <body>
 
-  <audio autoplay loop>
+  <audio id="myAudio" loop>
     <source src="audio/save-and-sound.mp3" type="audio/mp3">
-  </audio>
+</audio>
 
   <section id="hero"
     class="hero w-100 h-100 p-3 text-center d-flex justify-content-center align-items-center text-white">
@@ -576,6 +576,18 @@ function copyText(button) {
     // Menghapus elemen textarea yang tidak terlihat
     document.body.removeChild(textarea);
 }
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      let audio = document.getElementById('myAudio');
+      audio.muted = true;  // Start muted to comply with autoplay policies
+      audio.play().then(() => {
+          audio.muted = false;  // Unmute after playback starts
+      }).catch(error => {
+          console.log('Autoplay tidak diperbolehkan: ', error);
+      });
+  });
 </script>
 
 
