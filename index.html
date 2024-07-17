@@ -47,8 +47,6 @@
 
 
 
-
-
   <section id="hero"
     class="hero w-100 h-100 p-3 text-center d-flex justify-content-center align-items-center text-white">
     <main>
@@ -469,7 +467,7 @@
     const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
     const audioIcon = document.querySelector('.audio-icon-wrapper i');
     const song = document.querySelector('#song');
-    let isPlaying = false;
+    isPlaying = true;
 
     function playAudio() {
       song.volume = 1;
@@ -562,26 +560,6 @@ function copyText(button) {
     document.body.removeChild(textarea);
 }
 </script>
-
-<script>
-function toggleSong() {
-  var song = document.getElementById('song');
-  var icon = document.getElementById('songIcon');
-
-  if (song.paused) {
-    song.play();
-    icon.classList.remove('bi-disc');
-    icon.classList.add('bi-pause-circle');
-  } else {
-    song.pause();
-    icon.classList.remove('bi-pause-circle');
-    icon.classList.add('bi-disc');
-  }
-}
-
-
-</script>
-
 
 </body>
 
