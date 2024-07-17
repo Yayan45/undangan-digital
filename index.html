@@ -35,10 +35,19 @@
 </head>
 
 <body>
+  <div id="audio-container">
+    <audio id="song" autoplay loop>
+      <source src="audio/save-and-sound.mp3" type="audio/mp3">
+    </audio>
 
-  <audio id="myAudio" controls muted loop>
-    <source src="audio/save-and-sound.mp3" type="audio/mp3">
-</audio>
+    <div class="audio-icon-wrapper">
+      <i class="bi bi-disc"></i>
+    </div>
+  </div>
+
+
+
+
 
   <section id="hero"
     class="hero w-100 h-100 p-3 text-center d-flex justify-content-center align-items-center text-white">
@@ -455,30 +464,12 @@
   </script>
 
 
-  <!-- <script>
+  <script>
     const rootElement = document.querySelector(":root");
     const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
     const audioIcon = document.querySelector('.audio-icon-wrapper i');
     const song = document.querySelector('#song');
     let isPlaying = false;
-
-    function disableScroll() {
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-      window.onscroll = function () {
-        window.scrollTo(scrollTop, scrollLeft);
-      }
-
-      rootElement.style.scrollBehavior = 'auto';
-    }
-
-    function enableScroll() {
-      window.onscroll = function () { }
-      rootElement.style.scrollBehavior = 'smooth';
-      // localStorage.setItem('opened', 'true');
-      playAudio();
-    }
 
     function playAudio() {
       song.volume = 1;
@@ -497,15 +488,9 @@
         audioIcon.classList.add('bi-disc');
         audioIcon.classList.remove('bi-pause-circle');
       }
-
       isPlaying = !isPlaying;
     }
-
-    // if (!localStorage.getItem('opened')) {
-    //   disableScroll();
-    // }
-    disableScroll();
-  </script> -->
+  </script>
 
   <script>
     const urlParams = new URLSearchParams(window.location.search);
@@ -579,15 +564,22 @@ function copyText(button) {
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-      let audio = document.getElementById('myAudio');
-      audio.muted = true;  // Start muted to comply with autoplay policies
-      audio.play().then(() => {
-          audio.muted = false;  // Unmute after playback starts
-      }).catch(error => {
-          console.log('Autoplay tidak diperbolehkan: ', error);
-      });
-  });
+function toggleSong() {
+  var song = document.getElementById('song');
+  var icon = document.getElementById('songIcon');
+
+  if (song.paused) {
+    song.play();
+    icon.classList.remove('bi-disc');
+    icon.classList.add('bi-pause-circle');
+  } else {
+    song.pause();
+    icon.classList.remove('bi-pause-circle');
+    icon.classList.add('bi-disc');
+  }
+}
+
+
 </script>
 
 
