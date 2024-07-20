@@ -89,23 +89,23 @@ html, body {
 
 .hero a {
   color:white;
-  background-color: var(--pink);
+  background-color: rgb(23, 22, 22);
   box-shadow: var(--shadow);
-  border-radius: 5rem;
-  -webkit-border-radius: 5rem;
-  -moz-border-radius: 5rem;
-  -ms-border-radius: 5rem;
-  -o-border-radius: 5rem;
+  border-radius:12px;
+  -webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  -ms-border-radius:12px;
+  -o-border-radius:12px;
 }
 
 .hero a:hover {
-  background-color: gold;
+  background-color: white;
   color: black;
-  border-radius: 5rem;
-  -webkit-border-radius: 4rem;
-  -moz-border-radius: 4rem;
-  -ms-border-radius: 4rem;
-  -o-border-radius: 4rem;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 
@@ -429,7 +429,6 @@ footer li {
   justify-content: center;
   align-items: center;
   line-height: 0;
-  z-index: 1;
 }
 
 @keyframes rotating {
@@ -542,6 +541,10 @@ footer li {
   /* .for{
     margin-top: 38rem;
   } */
+}
+.icon-pesan{
+  margin-right: 5px;
+
 }
 
 /* mobile phone */
