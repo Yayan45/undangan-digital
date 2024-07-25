@@ -430,6 +430,15 @@ footer li {
   align-items: center;
   line-height: 0;
 }
+.carousel-control-prev{
+  color: white;
+  opacity: 1 !important;
+}
+.carousel-control-next{
+  color: white;
+  opacity: 1 !important;
+
+}
 
 @keyframes rotating {
   from {
@@ -509,6 +518,7 @@ footer li {
   -o-border-radius: 15px;
 }
 
+
 /* tablet */
 @media (max-width: 768px) {
   html {
@@ -544,7 +554,6 @@ footer li {
 }
 .icon-pesan{
   margin-right: 5px;
-
 }
 
 /* mobile phone */
@@ -622,6 +631,20 @@ footer li {
     overflow-x: hidden;
     min-height: 100vh;
     background-position-y: none;
+  }
+  .rsvp h2{
+    font-size: 57px;
+  }
+}
+@media (min-width: 992px) {
+  .d-lg-none {
+      display: none !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .d-lg-block {
+      display: none !important;
   }
 }
 
