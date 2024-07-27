@@ -635,6 +635,9 @@ footer li {
   .rsvp h2{
     font-size: 57px;
   }
+  .couple{
+    margin-top: 24px !important;
+  }
 }
 @media (min-width: 992px) {
   .d-lg-none {
